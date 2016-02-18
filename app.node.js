@@ -92,7 +92,7 @@ module.exports =
       return __webpack_require__(24);
     }, '/faq': function faq() {
       return __webpack_require__(25);
-    }, '/free-campaign': function freeCampaign() {
+    }, '/index-old': function indexOld() {
       return __webpack_require__(26);
     }, '/': function _() {
       return __webpack_require__(27);
@@ -1955,6 +1955,310 @@ module.exports =
   'use strict';
 
   Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  var _componentsContainerContainer = __webpack_require__(2);
+
+  var _componentsContainerContainer2 = _interopRequireDefault(_componentsContainerContainer);
+
+  var _default = (function (_Component) {
+    _inherits(_default, _Component);
+
+    function _default() {
+      _classCallCheck(this, _default);
+
+      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
+    }
+
+    _createClass(_default, [{
+      key: 'render',
+      value: function render() {
+        var avatar = function avatar(image) {
+          return '<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g><clipPath id="hex-mask"><polygon fill="#ff0000" points="60,0 120,30 120,90 60,120 0,90 0,30"/></clipPath></g><image clip-path="url(#hex-mask)" height="120" width="120" xlink:href="' + image + '" /></svg>';
+        };
+        return _react2['default'].createElement(
+          'div',
+          null,
+          _react2['default'].createElement(
+            'div',
+            { className: 'Banner' },
+            _react2['default'].createElement(
+              'div',
+              { className: 'Banner-item', id: 'Banner-item-1', style: { backgroundImage: "url(home-banner-1.jpg)" } },
+              _react2['default'].createElement(
+                'div',
+                { className: 'Banner-item-text-wrapper text-center' },
+                _react2['default'].createElement(
+                  'div',
+                  { className: 'Banner-item-text Banner-item-text-1' },
+                  'The Best Homecare Option'
+                ),
+                _react2['default'].createElement(
+                  'div',
+                  { className: 'Banner-item-text Banner-item-text-2' },
+                  'Family Caregivers'
+                ),
+                _react2['default'].createElement(
+                  'div',
+                  { className: 'Banner-item-text Banner-item-text-3' },
+                  'From SGD 30 / Visit'
+                ),
+                _react2['default'].createElement(
+                  'a',
+                  { href: '/booking1', className: 'btn btn-primary Banner-item-button Banner-item-text-4' },
+                  'Book A Caregiver'
+                )
+              )
+            )
+          ),
+          _react2['default'].createElement(
+            'div',
+            { className: 'Lead' },
+            _react2['default'].createElement(
+              _componentsContainerContainer2['default'],
+              null,
+              _react2['default'].createElement(
+                'h1',
+                { className: 'text-center' },
+                'A family caregiver for every needing family'
+              ),
+              _react2['default'].createElement(
+                'p',
+                { className: 'text-center featured' },
+                'As caregivers ourselves, we understand the stress and urgency involved, often in the busiest period of the day in the mornings. Let our healthcare professionals assist you in reducing your load and in supporting you to get your loved ones ready to start the day!'
+              ),
+              _react2['default'].createElement(
+                'div',
+                { className: 'Features-list' },
+                _react2['default'].createElement(
+                  'div',
+                  { className: 'Features-item' },
+                  _react2['default'].createElement('img', { src: 'home-features-1.png', className: 'Features-item-icon' }),
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'Features-item-title' },
+                    'Short-hours care'
+                  ),
+                  _react2['default'].createElement(
+                    'div',
+                    null,
+                    'No minimum hours required!'
+                  )
+                ),
+                _react2['default'].createElement(
+                  'div',
+                  { className: 'Features-item' },
+                  _react2['default'].createElement('img', { src: 'home-features-2.png', className: 'Features-item-icon' }),
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'Features-item-title' },
+                    'Hassle-Free'
+                  ),
+                  _react2['default'].createElement(
+                    'div',
+                    null,
+                    'Let us handle the coordination for you!'
+                  )
+                ),
+                _react2['default'].createElement(
+                  'div',
+                  { className: 'Features-item' },
+                  _react2['default'].createElement('img', { src: 'home-features-3.png', className: 'Features-item-icon' }),
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'Features-item-title' },
+                    'Customised Care'
+                  ),
+                  _react2['default'].createElement(
+                    'div',
+                    null,
+                    'Every patient has different needs'
+                  )
+                ),
+                _react2['default'].createElement(
+                  'div',
+                  { className: 'Features-item' },
+                  _react2['default'].createElement('img', { src: 'home-features-4.png', className: 'Features-item-icon' }),
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'Features-item-title' },
+                    'Verified Caregivers'
+                  ),
+                  _react2['default'].createElement(
+                    'div',
+                    null,
+                    'By both eBeeCare and community'
+                  )
+                )
+              )
+            )
+          ),
+          _react2['default'].createElement(
+            'div',
+            { className: 'Actions' },
+            _react2['default'].createElement(
+              _componentsContainerContainer2['default'],
+              null,
+              _react2['default'].createElement(
+                'div',
+                { className: 'Actions-list' },
+                _react2['default'].createElement(
+                  'div',
+                  { className: 'Actions-item' },
+                  _react2['default'].createElement('img', { src: 'home-actions-1.png' }),
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'Actions-item-title' },
+                    'Book A Caregiver Online'
+                  ),
+                  _react2['default'].createElement(
+                    'a',
+                    { href: '', className: 'btn Actions-item-button' },
+                    'Book A Caregiver'
+                  )
+                ),
+                _react2['default'].createElement(
+                  'div',
+                  { className: 'Actions-item' },
+                  _react2['default'].createElement('img', { src: 'home-actions-1.png' }),
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'Actions-item-title' },
+                    'Sign up now & Get a Free Home Visit!'
+                  ),
+                  _react2['default'].createElement(
+                    'a',
+                    { href: '/free-campaign', className: 'btn Actions-item-button', disabled: true },
+                    'Proceed'
+                  )
+                ),
+                _react2['default'].createElement(
+                  'div',
+                  { className: 'Actions-item' },
+                  _react2['default'].createElement('img', { src: 'home-actions-2.png' }),
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'Actions-item-title' },
+                    'Call Ebeecare Hotline'
+                  ),
+                  _react2['default'].createElement(
+                    'a',
+                    { href: '#', className: 'btn Actions-item-button', disabled: true },
+                    '9733 6938'
+                  )
+                )
+              )
+            )
+          ),
+          _react2['default'].createElement(
+            'div',
+            { className: 'Testimonials' },
+            _react2['default'].createElement(
+              _componentsContainerContainer2['default'],
+              null,
+              _react2['default'].createElement(
+                'h1',
+                { className: 'text-center' },
+                'Our Customers Say...'
+              ),
+              _react2['default'].createElement(
+                'div',
+                { className: 'Testimonials-list' },
+                _react2['default'].createElement(
+                  'div',
+                  { className: 'Testimonials-item' },
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'Testimonials-wrapper' },
+                    _react2['default'].createElement(
+                      'div',
+                      { className: 'Testimonials-item-text' },
+                      'Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'
+                    ),
+                    _react2['default'].createElement(
+                      'div',
+                      { className: 'Testimonials-item-name' },
+                      'Mr. Goh Mun'
+                    ),
+                    _react2['default'].createElement('div', { className: 'Testimonials-item-avatar', dangerouslySetInnerHTML: { __html: avatar('https://graph.facebook.com/574555853/picture?width=240&height=240') } })
+                  ),
+                  _react2['default'].createElement('div', null)
+                ),
+                _react2['default'].createElement(
+                  'div',
+                  { className: 'Testimonials-item' },
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'Testimonials-wrapper' },
+                    _react2['default'].createElement(
+                      'div',
+                      { className: 'Testimonials-item-text' },
+                      'Nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'
+                    ),
+                    _react2['default'].createElement(
+                      'div',
+                      { className: 'Testimonials-item-name' },
+                      'Ms. Sherly Li'
+                    ),
+                    _react2['default'].createElement('div', { className: 'Testimonials-item-avatar', dangerouslySetInnerHTML: { __html: avatar('https://graph.facebook.com/100010858146192/picture?width=240&height=240') } })
+                  ),
+                  _react2['default'].createElement('div', null)
+                ),
+                _react2['default'].createElement(
+                  'div',
+                  { className: 'Testimonials-item' },
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'Testimonials-wrapper' },
+                    _react2['default'].createElement(
+                      'div',
+                      { className: 'Testimonials-item-text' },
+                      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut '
+                    ),
+                    _react2['default'].createElement(
+                      'div',
+                      { className: 'Testimonials-item-name' },
+                      'Mrs. Erika Tan'
+                    ),
+                    _react2['default'].createElement('div', { className: 'Testimonials-item-avatar', dangerouslySetInnerHTML: { __html: avatar('https://graph.facebook.com/100010744992918/picture?width=240&height=240') } })
+                  ),
+                  _react2['default'].createElement('div', null)
+                )
+              )
+            )
+          )
+        );
+      }
+    }]);
+
+    return _default;
+  })(_react.Component);
+
+  exports['default'] = _default;
+  module.exports = exports['default'];
+
+/***/ },
+/* 27 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
       value: true
   });
 
@@ -2479,310 +2783,6 @@ module.exports =
       }]);
 
       return _default;
-  })(_react.Component);
-
-  exports['default'] = _default;
-  module.exports = exports['default'];
-
-/***/ },
-/* 27 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-  var _react = __webpack_require__(1);
-
-  var _react2 = _interopRequireDefault(_react);
-
-  var _componentsContainerContainer = __webpack_require__(2);
-
-  var _componentsContainerContainer2 = _interopRequireDefault(_componentsContainerContainer);
-
-  var _default = (function (_Component) {
-    _inherits(_default, _Component);
-
-    function _default() {
-      _classCallCheck(this, _default);
-
-      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
-    }
-
-    _createClass(_default, [{
-      key: 'render',
-      value: function render() {
-        var avatar = function avatar(image) {
-          return '<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g><clipPath id="hex-mask"><polygon fill="#ff0000" points="60,0 120,30 120,90 60,120 0,90 0,30"/></clipPath></g><image clip-path="url(#hex-mask)" height="120" width="120" xlink:href="' + image + '" /></svg>';
-        };
-        return _react2['default'].createElement(
-          'div',
-          null,
-          _react2['default'].createElement(
-            'div',
-            { className: 'Banner' },
-            _react2['default'].createElement(
-              'div',
-              { className: 'Banner-item', id: 'Banner-item-1', style: { backgroundImage: "url(home-banner-1.jpg)" } },
-              _react2['default'].createElement(
-                'div',
-                { className: 'Banner-item-text-wrapper text-center' },
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'Banner-item-text Banner-item-text-1' },
-                  'The Best Homecare Option'
-                ),
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'Banner-item-text Banner-item-text-2' },
-                  'Family Caregivers'
-                ),
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'Banner-item-text Banner-item-text-3' },
-                  'From SGD 30 / Visit'
-                ),
-                _react2['default'].createElement(
-                  'a',
-                  { href: '/booking1', className: 'btn btn-primary Banner-item-button Banner-item-text-4' },
-                  'Book A Caregiver'
-                )
-              )
-            )
-          ),
-          _react2['default'].createElement(
-            'div',
-            { className: 'Lead' },
-            _react2['default'].createElement(
-              _componentsContainerContainer2['default'],
-              null,
-              _react2['default'].createElement(
-                'h1',
-                { className: 'text-center' },
-                'A family caregiver for every needing family'
-              ),
-              _react2['default'].createElement(
-                'p',
-                { className: 'text-center featured' },
-                'As caregivers ourselves, we understand the stress and urgency involved, often in the busiest period of the day in the mornings. Let our healthcare professionals assist you in reducing your load and in supporting you to get your loved ones ready to start the day!'
-              ),
-              _react2['default'].createElement(
-                'div',
-                { className: 'Features-list' },
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'Features-item' },
-                  _react2['default'].createElement('img', { src: 'home-features-1.png', className: 'Features-item-icon' }),
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'Features-item-title' },
-                    'Short-hours care'
-                  ),
-                  _react2['default'].createElement(
-                    'div',
-                    null,
-                    'No minimum hours required!'
-                  )
-                ),
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'Features-item' },
-                  _react2['default'].createElement('img', { src: 'home-features-2.png', className: 'Features-item-icon' }),
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'Features-item-title' },
-                    'Hassle-Free'
-                  ),
-                  _react2['default'].createElement(
-                    'div',
-                    null,
-                    'Let us handle the coordination for you!'
-                  )
-                ),
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'Features-item' },
-                  _react2['default'].createElement('img', { src: 'home-features-3.png', className: 'Features-item-icon' }),
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'Features-item-title' },
-                    'Customised Care'
-                  ),
-                  _react2['default'].createElement(
-                    'div',
-                    null,
-                    'Every patient has different needs'
-                  )
-                ),
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'Features-item' },
-                  _react2['default'].createElement('img', { src: 'home-features-4.png', className: 'Features-item-icon' }),
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'Features-item-title' },
-                    'Verified Caregivers'
-                  ),
-                  _react2['default'].createElement(
-                    'div',
-                    null,
-                    'By both eBeeCare and community'
-                  )
-                )
-              )
-            )
-          ),
-          _react2['default'].createElement(
-            'div',
-            { className: 'Actions' },
-            _react2['default'].createElement(
-              _componentsContainerContainer2['default'],
-              null,
-              _react2['default'].createElement(
-                'div',
-                { className: 'Actions-list' },
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'Actions-item' },
-                  _react2['default'].createElement('img', { src: 'home-actions-1.png' }),
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'Actions-item-title' },
-                    'Book A Caregiver Online'
-                  ),
-                  _react2['default'].createElement(
-                    'a',
-                    { href: '', className: 'btn Actions-item-button' },
-                    'Book A Caregiver'
-                  )
-                ),
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'Actions-item' },
-                  _react2['default'].createElement('img', { src: 'home-actions-1.png' }),
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'Actions-item-title' },
-                    'Sign up now & Get a Free Home Visit!'
-                  ),
-                  _react2['default'].createElement(
-                    'a',
-                    { href: '/free-campaign', className: 'btn Actions-item-button', disabled: true },
-                    'Proceed'
-                  )
-                ),
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'Actions-item' },
-                  _react2['default'].createElement('img', { src: 'home-actions-2.png' }),
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'Actions-item-title' },
-                    'Call Ebeecare Hotline'
-                  ),
-                  _react2['default'].createElement(
-                    'a',
-                    { href: '#', className: 'btn Actions-item-button', disabled: true },
-                    '9733 6938'
-                  )
-                )
-              )
-            )
-          ),
-          _react2['default'].createElement(
-            'div',
-            { className: 'Testimonials' },
-            _react2['default'].createElement(
-              _componentsContainerContainer2['default'],
-              null,
-              _react2['default'].createElement(
-                'h1',
-                { className: 'text-center' },
-                'Our Customers Say...'
-              ),
-              _react2['default'].createElement(
-                'div',
-                { className: 'Testimonials-list' },
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'Testimonials-item' },
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'Testimonials-wrapper' },
-                    _react2['default'].createElement(
-                      'div',
-                      { className: 'Testimonials-item-text' },
-                      'Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'
-                    ),
-                    _react2['default'].createElement(
-                      'div',
-                      { className: 'Testimonials-item-name' },
-                      'Mr. Goh Mun'
-                    ),
-                    _react2['default'].createElement('div', { className: 'Testimonials-item-avatar', dangerouslySetInnerHTML: { __html: avatar('https://graph.facebook.com/574555853/picture?width=240&height=240') } })
-                  ),
-                  _react2['default'].createElement('div', null)
-                ),
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'Testimonials-item' },
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'Testimonials-wrapper' },
-                    _react2['default'].createElement(
-                      'div',
-                      { className: 'Testimonials-item-text' },
-                      'Nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'
-                    ),
-                    _react2['default'].createElement(
-                      'div',
-                      { className: 'Testimonials-item-name' },
-                      'Ms. Sherly Li'
-                    ),
-                    _react2['default'].createElement('div', { className: 'Testimonials-item-avatar', dangerouslySetInnerHTML: { __html: avatar('https://graph.facebook.com/100010858146192/picture?width=240&height=240') } })
-                  ),
-                  _react2['default'].createElement('div', null)
-                ),
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'Testimonials-item' },
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'Testimonials-wrapper' },
-                    _react2['default'].createElement(
-                      'div',
-                      { className: 'Testimonials-item-text' },
-                      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut '
-                    ),
-                    _react2['default'].createElement(
-                      'div',
-                      { className: 'Testimonials-item-name' },
-                      'Mrs. Erika Tan'
-                    ),
-                    _react2['default'].createElement('div', { className: 'Testimonials-item-avatar', dangerouslySetInnerHTML: { __html: avatar('https://graph.facebook.com/100010744992918/picture?width=240&height=240') } })
-                  ),
-                  _react2['default'].createElement('div', null)
-                )
-              )
-            )
-          )
-        );
-      }
-    }]);
-
-    return _default;
   })(_react.Component);
 
   exports['default'] = _default;
