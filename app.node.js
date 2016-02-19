@@ -927,7 +927,7 @@ module.exports =
                 'a',
                 { className: (0, _classNames2['default'])('Navigation-link', this.props.path === '/ask-fatimah' || this.props.path === '/ask-fatimah-cn' ? 'active' : ''), onclick: 'toggleChat()', href: this.props.locale == "en" ? '#chat' : '#chat', onClick: _Link2['default'].handleClick },
                 this.props.locale == "en" ? 'Ask Fatimah' : '问法蒂玛',
-                ' - ',
+                ' ',
                 _react2['default'].createElement('div', { id: 'status' })
               )
             )
