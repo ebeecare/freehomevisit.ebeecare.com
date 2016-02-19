@@ -787,9 +787,6 @@ module.exports =
 
   var _Link2 = _interopRequireDefault(_Link);
 
-  var tawkToggleCode = { __html: 'Tawk_API.onStatusChange = function (status){' + 'if(status === \'online\'){document.getElementById(\'status\').innerHTML = \'<a href="#" onclick="toggleChat()">Online - Click to chat</a>\';}' + 'else if(status === \'away\'){document.getElementById(\'status\').innerHTML = \'We are currently away\';}' + 'else if(status === \'offline\'){document.getElementById(\'status\').innerHTML = \'Live chat is Offline\';}};'
-  };
-
   var Navigation = (function (_Component) {
     _inherits(Navigation, _Component);
 
@@ -922,7 +919,6 @@ module.exports =
             _react2['default'].createElement(
               'li',
               { className: 'Navigation-item' },
-              _react2['default'].createElement('script', { dangerouslySetInnerHTML: tawkToggleCode }),
               _react2['default'].createElement(
                 'a',
                 { className: (0, _classNames2['default'])('Navigation-link', this.props.path === '/ask-fatimah' || this.props.path === '/ask-fatimah-cn' ? 'active' : ''), onclick: 'toggleChat()', href: this.props.locale == "en" ? '#chat' : '#chat' },
