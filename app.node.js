@@ -827,8 +827,6 @@ module.exports =
               }
             }
           }
-          var askFatimahTab = document.getElementById("ask-fatimah-tab");
-          askFatimahTab.onclick = toggleChat;
         }
       } catch (e) {}
       this.state = { locale: locale };
@@ -836,6 +834,12 @@ module.exports =
     }
 
     _createClass(Navigation, [{
+      key: 'toggleChat',
+      value: function toggleChat() {
+        Tawk_API.toggle();
+        return false;
+      }
+    }, {
       key: 'componentDidMount',
       value: function componentDidMount() {
         this.setState({ componentMount: true });
@@ -923,7 +927,7 @@ module.exports =
               { className: 'Navigation-item' },
               _react2['default'].createElement(
                 'a',
-                { id: 'ask-fatimah-tab', className: (0, _classNames2['default'])('Navigation-link', this.props.path === '/ask-fatimah' || this.props.path === '/ask-fatimah-cn' ? 'active' : ''), onClick: 'toggleChat()', href: this.props.locale == "en" ? '#chat' : '#chat' },
+                { className: (0, _classNames2['default'])('Navigation-link', this.props.path === '/ask-fatimah' || this.props.path === '/ask-fatimah-cn' ? 'active' : ''), onClick: this.toggleChat.bind(this), href: this.props.locale == "en" ? '#chat' : '#chat' },
                 this.props.locale == "en" ? 'Ask Fatimah' : '问法蒂玛'
               )
             )
