@@ -1811,6 +1811,43 @@ module.exports =
               }
           }
       }, {
+          key: 'postalcodeInputChange',
+          value: function postalcodeInputChange() {
+              var postalCodeInput = document.getElementById("postal");
+              var addressInput = document.getElementById("address");
+              if (postalCodeInput.value.length == 6) {
+                  try {
+                      postalCodeInput.disabled = true;
+                      var geocoder = new google.maps.Geocoder();
+                      geocoder.geocode({
+                          'address': postalCodeInput.value,
+                          'region': 'SG'
+                      }, function (results, status) {
+                          if (status == google.maps.GeocoderStatus.OK) {
+                              var position = results[0].geometry.location;
+                              geocoder.geocode({
+                                  latLng: position
+                              }, function (responses) {
+                                  if (responses && responses.length > 0) {
+                                      addressInput.value = responses[0].formatted_address;
+                                      postalCodeInput.disabled = false;
+                                  } else {
+                                      addressInput.value = "Invalid postal code.";
+                                      postalCodeInput.disabled = false;
+                                  }
+                              });
+                          } else {
+                              postalCodeInput.disabled = false;
+                              addressInput.value = "Invalid postal code.";
+                          }
+                      });
+                  } catch (e) {
+                      postalCodeInput.disabled = false;
+                      addressInput.value = "Unable to find your address.";
+                  }
+              }
+          }
+      }, {
           key: 'submitForm',
           value: function submitForm() {
               if (!this.state.captchaCompleted) {
@@ -1939,7 +1976,7 @@ module.exports =
           value: function render() {
               return _react2['default'].createElement(
                   'div',
-                  null,
+                  { className: 'Body' },
                   _react2['default'].createElement(
                       'div',
                       { className: 'top-header-label' },
@@ -2118,7 +2155,7 @@ module.exports =
                                           _react2['default'].createElement(
                                               'option',
                                               { value: '7-9' },
-                                              '7am - 9 am'
+                                              '7am - 9am'
                                           ),
                                           _react2['default'].createElement(
                                               'option',
@@ -2160,7 +2197,7 @@ module.exports =
                                   _react2['default'].createElement(
                                       'div',
                                       { className: 'item' },
-                                      _react2['default'].createElement('input', { className: 'input fill-width', type: 'text', name: 'postal', id: 'postal', placeholder: '邮政编码*' })
+                                      _react2['default'].createElement('input', { className: 'input fill-width', type: 'text', name: 'postal', id: 'postal', placeholder: '邮政编码*', onChange: this.postalcodeInputChange.bind(this) })
                                   ),
                                   _react2['default'].createElement(
                                       'div',
@@ -2183,27 +2220,22 @@ module.exports =
                                           _react2['default'].createElement(
                                               'option',
                                               { value: '', disabled: true, hidden: true, className: 'place_holder' },
-                                              '选择病情*'
+                                              '免费服务类型*'
                                           ),
                                           _react2['default'].createElement(
                                               'option',
-                                              { value: 'cancer' },
-                                              '癌症'
+                                              { value: 'Home Health Checkup' },
+                                              '家庭健康检查'
                                           ),
                                           _react2['default'].createElement(
                                               'option',
-                                              { value: 'diabetes' },
-                                              '糖尿病'
+                                              { value: 'Post-discharge Recovery' },
+                                              '出院后恢复'
                                           ),
                                           _react2['default'].createElement(
                                               'option',
-                                              { value: 'disabled' },
-                                              '残'
-                                          ),
-                                          _react2['default'].createElement(
-                                              'option',
-                                              { value: 'others' },
-                                              '其他'
+                                              { value: 'Home Caregiver Training' },
+                                              '首页保姆培训'
                                           )
                                       )
                                   ),
@@ -2417,6 +2449,43 @@ module.exports =
                       buttons[i].checked = true;
                   } else {
                       buttons[i].checked = false;
+                  }
+              }
+          }
+      }, {
+          key: 'postalcodeInputChange',
+          value: function postalcodeInputChange() {
+              var postalCodeInput = document.getElementById("postal");
+              var addressInput = document.getElementById("address");
+              if (postalCodeInput.value.length == 6) {
+                  try {
+                      postalCodeInput.disabled = true;
+                      var geocoder = new google.maps.Geocoder();
+                      geocoder.geocode({
+                          'address': postalCodeInput.value,
+                          'region': 'SG'
+                      }, function (results, status) {
+                          if (status == google.maps.GeocoderStatus.OK) {
+                              var position = results[0].geometry.location;
+                              geocoder.geocode({
+                                  latLng: position
+                              }, function (responses) {
+                                  if (responses && responses.length > 0) {
+                                      addressInput.value = responses[0].formatted_address;
+                                      postalCodeInput.disabled = false;
+                                  } else {
+                                      addressInput.value = "Invalid postal code.";
+                                      postalCodeInput.disabled = false;
+                                  }
+                              });
+                          } else {
+                              postalCodeInput.disabled = false;
+                              addressInput.value = "Invalid postal code.";
+                          }
+                      });
+                  } catch (e) {
+                      postalCodeInput.disabled = false;
+                      addressInput.value = "Unable to find your address.";
                   }
               }
           }
@@ -2770,7 +2839,7 @@ module.exports =
                                   _react2['default'].createElement(
                                       'div',
                                       { className: 'item' },
-                                      _react2['default'].createElement('input', { className: 'input fill-width', type: 'text', name: 'postal', id: 'postal', placeholder: 'Postal Code*' })
+                                      _react2['default'].createElement('input', { className: 'input fill-width', type: 'text', name: 'postal', id: 'postal', placeholder: 'Postal Code*', onChange: this.postalcodeInputChange.bind(this) })
                                   ),
                                   _react2['default'].createElement(
                                       'div',
@@ -2793,27 +2862,22 @@ module.exports =
                                           _react2['default'].createElement(
                                               'option',
                                               { value: '', disabled: true, hidden: true, className: 'place_holder' },
-                                              'Select medical condition*'
+                                              'Free Service Type*'
                                           ),
                                           _react2['default'].createElement(
                                               'option',
-                                              { value: 'cancer' },
-                                              'Cancer'
+                                              { value: 'Home Health Checkup' },
+                                              'Home Health Checkup'
                                           ),
                                           _react2['default'].createElement(
                                               'option',
-                                              { value: 'diabetes' },
-                                              'Diabetes'
+                                              { value: 'Post-discharge Recovery' },
+                                              'Post-discharge Recovery'
                                           ),
                                           _react2['default'].createElement(
                                               'option',
-                                              { value: 'disabled' },
-                                              'Disabled'
-                                          ),
-                                          _react2['default'].createElement(
-                                              'option',
-                                              { value: 'others' },
-                                              'Others'
+                                              { value: 'Home Caregiver Training' },
+                                              'Home Caregiver Training'
                                           )
                                       )
                                   ),
