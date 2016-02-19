@@ -827,6 +827,8 @@ module.exports =
               }
             }
           }
+          var askFatimahTab = document.getElementById("ask-fatimah-tab");
+          askFatimahTab.onclick = toggleChat;
         }
       } catch (e) {}
       this.state = { locale: locale };
@@ -921,7 +923,7 @@ module.exports =
               { className: 'Navigation-item' },
               _react2['default'].createElement(
                 'a',
-                { className: (0, _classNames2['default'])('Navigation-link', this.props.path === '/ask-fatimah' || this.props.path === '/ask-fatimah-cn' ? 'active' : ''), onClick: 'toggleChat()', href: this.props.locale == "en" ? '#chat' : '#chat' },
+                { id: 'ask-fatimah-tab', className: (0, _classNames2['default'])('Navigation-link', this.props.path === '/ask-fatimah' || this.props.path === '/ask-fatimah-cn' ? 'active' : ''), onClick: 'toggleChat()', href: this.props.locale == "en" ? '#chat' : '#chat' },
                 this.props.locale == "en" ? 'Ask Fatimah' : '问法蒂玛'
               )
             )
