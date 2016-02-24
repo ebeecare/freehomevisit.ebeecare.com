@@ -374,7 +374,13 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _reactIconsLibFa = __webpack_require__(40);
+  var _reactIconsLibFaTwitter = __webpack_require__(41);
+
+  var _reactIconsLibFaTwitter2 = _interopRequireDefault(_reactIconsLibFaTwitter);
+
+  var _reactIconsLibFaFacebook = __webpack_require__(40);
+
+  var _reactIconsLibFaFacebook2 = _interopRequireDefault(_reactIconsLibFaFacebook);
 
   __webpack_require__(28);
 
@@ -456,12 +462,12 @@ module.exports =
                   _react2['default'].createElement(
                     'a',
                     { href: 'https://www.facebook.com/ebeecare/', className: 'Footer-social-media' },
-                    _react2['default'].createElement(_reactIconsLibFa.FaFacebook, null)
+                    _react2['default'].createElement(_reactIconsLibFaFacebook2['default'], null)
                   ),
                   _react2['default'].createElement(
                     'a',
                     { href: 'https://twitter.com/ebeecaresg', className: 'Footer-social-media' },
-                    _react2['default'].createElement(_reactIconsLibFa.FaTwitter, null)
+                    _react2['default'].createElement(_reactIconsLibFaTwitter2['default'], null)
                   )
                 )
               )
@@ -3143,7 +3149,13 @@ module.exports =
 /* 40 */
 /***/ function(module, exports) {
 
-  module.exports = require("react-icons/lib/fa");
+  module.exports = require("react-icons/lib/fa/facebook");
+
+/***/ },
+/* 41 */
+/***/ function(module, exports) {
+
+  module.exports = require("react-icons/lib/fa/twitter");
 
 /***/ }
 /******/ ]);
