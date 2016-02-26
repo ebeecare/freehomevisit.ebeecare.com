@@ -2657,7 +2657,7 @@ module.exports =
                               _react2['default'].createElement(
                                   'p',
                                   { className: 'description' },
-                                  'eBeeCare free home nursing visit program aims to enhance the lives of older people staying in their own house.  Our beneficent elderly will enjoy half an hour to one-hour home safety inspection, chat and laugh over a cuppa to enhance a lonely person’s life and give them social contact with someone outside their normal routine and environment. '
+                                  'eBeeCare\'s free home nursing visit program aims to enhance the lives of elderly staying at home. Elderly in our program will enjoy a half to one hour home safety inspection, chat and laugh over a cuppa to enhance a lonely person’s life and give them social contact with someone outside their normal routine and environment.'
                               ),
                               _react2['default'].createElement(
                                   'h3',
@@ -2665,7 +2665,7 @@ module.exports =
                                   _react2['default'].createElement(
                                       'b',
                                       null,
-                                      'SERVICE INCLUDED IN A HOME VISIT'
+                                      'SERVICES INCLUDED IN A HOME VISIT'
                                   )
                               ),
                               _react2['default'].createElement(
@@ -2686,7 +2686,7 @@ module.exports =
                                       _react2['default'].createElement(
                                           'p',
                                           { className: 'description' },
-                                          'We deliver professional blood pressure, pulse rate, respiratory rate, BMI, muscle strength and health assessment service directly to your home. '
+                                          'We deliver a professional blood pressure, pulse rate, respiratory rate, BMI, muscle strength and health assessment service directly at your home.'
                                       )
                                   ),
                                   _react2['default'].createElement(
@@ -2722,7 +2722,7 @@ module.exports =
                                       _react2['default'].createElement(
                                           'p',
                                           { className: 'description' },
-                                          'We bring experienced nurses to your home to teach you how to handle family members with stroke, dementia and mental illness.'
+                                          'We bring experienced nurses to your home to teach you how to handle family members with stroke, dementia and mental illnesses.'
                                       )
                                   )
                               ),
@@ -2738,7 +2738,7 @@ module.exports =
                               _react2['default'].createElement(
                                   'p',
                                   { className: 'description' },
-                                  'All service providers in this programs are registered healthcare professional, with have minimum two years’ experience with local or private hospitals. Many of them are on volunteer basis. '
+                                  'All service providers in this program are registered healthcare professionals with at least two years’ experience in local or private hospitals. Most of them are providing this service on a volunteering basis. '
                               ),
                               _react2['default'].createElement(
                                   'p',
@@ -2947,22 +2947,22 @@ module.exports =
                                       _react2['default'].createElement(
                                           'h2',
                                           null,
-                                          'HOW IT WORK?'
+                                          'HOW IT WORKS?'
                                       ),
                                       _react2['default'].createElement(
                                           'p',
                                           null,
-                                          'Step 1: Sign up with us and book a slot for home visit.'
+                                          'Step 1: Sign up with us and book a timeslot for your home visit.'
                                       ),
                                       _react2['default'].createElement(
                                           'p',
                                           null,
-                                          'Step 2: Email will send to you with booking confirmation.'
+                                          'Step 2: Email will be sent to you with a booking confirmation.'
                                       ),
                                       _react2['default'].createElement(
                                           'p',
                                           null,
-                                          'Step 3: We will inform you the visit one week before'
+                                          'Step 3: We will inform you of the visit one week before.'
                                       )
                                   ),
                                   _react2['default'].createElement('img', { src: 'PrettyNurse.png' })
@@ -2981,7 +2981,7 @@ module.exports =
                                       _react2['default'].createElement(
                                           'div',
                                           { className: 'comment' },
-                                          '"I enjoyed the volunteer work with our senior at their home."'
+                                          '"I enjoyed the volunteer work with our senior at his home."'
                                       ),
                                       _react2['default'].createElement(
                                           'div',
